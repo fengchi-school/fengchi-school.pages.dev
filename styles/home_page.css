@@ -1,0 +1,255 @@
+/* Import fonts.  */
+@font-face {
+    font-family: OppoSans;
+    src: url("../fonts/OPPOSansMedium.woff2");
+}
+@font-face {
+    font-family: Deyihei;
+    src: url("../fonts/DeYiHei_SmileySans.woff2");
+}
+@font-face {
+    font-family: Novah;
+    src: url("../fonts/Novah.woff2");
+}
+
+/********** school good things **********/
+/* Set the [styles] of the [good]s. */
+.goods .good {
+    font-family: Deyihei;
+    font-size: 2.65em;
+    color: rgba(0, 0, 0, 0.75);
+}
+@media (width >= 600px) {
+    .goods .good {
+        font-size: 2.8em;
+    }
+}
+@media (width >= 1000px) {
+    .goods .good {
+        font-size: 3.15em;
+    }
+}
+
+/* Set the [styles] of the [num]s in the [good]s. */
+.goods .good .num {
+    background-image: linear-gradient(gold, orange);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 1.5em;
+}
+/* Set the [layout] of the [goods] part */
+.g2 {
+    text-align: center;
+}
+.g3 {
+    text-align: right;
+}
+@media (width >=600px) {
+    .goods-box {
+        display: flex;
+        justify-content: center;
+    }
+    .goods {
+        width: 73vw;
+    }
+}
+@media (width >=1000px) {
+    .goods-box {
+        display: flex;
+        justify-content: center;
+    }
+    .goods {
+        width: 67vw;
+    }
+}
+
+/********** welcome words **********/
+/* Set the [layout] & [styles] of the all tag in [main] part. */
+#main .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+#main .title .school-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main .title .welcome {
+    line-height: 0;
+    font-size: 1.1em;
+    color: #104E8B;
+}
+#main .title .text {
+    font-family: OppoSans;
+}
+#main .title .school-name {
+    font-family: OppoSans;
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 0;
+    color: rgba(20, 20, 80, 0.7);
+    transition: all 0.2s ease-in-out;
+}
+#main .title .school-name:hover {
+    font-size: 3.3em;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.253);
+}
+#main .title .school-name:hover + .a-text {
+    font-size: 1.7em;
+}
+@media (width >= 600px) {
+    #main .title .school-name {
+        font-size: 3.8em;
+    }
+    #mian .title .school-name:hover {
+        font-size: 4em;
+    }
+}
+@media (width >=1000px) {
+    #main .title .school-name {
+        font-size: 4.5em;
+    }
+    #main .title .school-name:hover {
+        font-size: 4.75em;
+    }
+}
+#main .title .a-text {
+    font-family: OppoSans;
+    font-size: 1.45em;
+    line-height: 0;
+    color: rgba(20, 20, 80, 0.68);
+    transition: all 0.2s ease-in-out;
+}
+
+#main .tip {
+    margin: 15px 0 15px 0;
+    font-size: 1.1em;
+    font-family: OppoSans;
+    line-height: 0;
+    color: #1874CD;
+    display: flex;
+    justify-content: space-between;
+}
+#main .tip div {
+    margin: 0 13px 0 13px;
+}
+#main .line {
+    background-color: #1874CD;
+    border: 1px solid #1874CD;
+}
+#main .tip-top-line {
+    margin-top: 40px;
+}
+#main .tip-bottom-line {
+    margin-bottom: 38px;
+}
+
+
+/********** nav box **********/
+/* Set the [layout] of the [nav box] part. */
+/* Set the real-time layout changes. */
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+@media (width <= 600px) {
+    .nav-box {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (width <= 1000px) {
+    .nav-box {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Set the [styles] & [layout] of the everyone [box] in the [nav box] part. */
+.nav-box .box {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.253), transparent);
+    backdrop-filter: blur(15px);
+    border: 2px solid azure;
+    border-radius: 10px;
+    padding: 20px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-box .en-title {
+    font-family: OppoSans;
+    text-transform: capitalize;
+}
+.nav-box .cn-title {
+    font-family: OppoSans;
+    font-size: 1.5em;
+}
+@media (width >=600px) {
+    .nav-box .cn-title {
+        font-size: 1.8em;
+    }
+}
+@media (width >=1000px) {
+    .nav-box .cn-title {
+        font-size: 1.8em;
+    }
+}
+.nav-box .line {
+    background-color: steelblue;
+    border: 1.5px solid steelblue;
+    margin: 17px 0 17px 0;
+}
+.nav-box .content a {
+    color: #1874CD;
+    font-size: 1.05em;
+}
+.nav-box .content {
+    font-family: OppoSans;
+    font-size: 1.1em;
+}
+@media (width >=600px) {
+    .nav-box .content {
+        font-size: 1.3em;
+    }
+}
+@media (width >=1000px) {
+    .nav-box .content {
+        font-size: 1.25em;
+    }
+}
+.nav-box .link {
+    font-family: OppoSans;
+    text-align: end;
+    justify-content: end;
+    align-items: end;
+    font-size: 1.17em;
+    margin-top: 23px;
+}
+@media (width >=600px) {
+    .nav-box .link {
+        font-size: 1.37em;
+    }
+}
+@media (width >=1000px) {
+    .nav-box .link {
+        font-size: 1.28em;
+    }
+}
+.nav-box .link a {
+    text-decoration: none;
+    color: #1874CD;
+    border: 2px solid cornflowerblue;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 10px 0 10px;
+}
+.nav-box .link span {
+    text-decoration: underline;
+    font-size: 1.05em;
+}
