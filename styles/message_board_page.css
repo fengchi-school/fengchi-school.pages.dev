@@ -1,0 +1,44 @@
+/* Import fonts. */
+@font-face {
+    font-family: OppoSans;
+    src: url("../fonts/OPPOSansMedium.woff2");
+}
+@font-face {
+    font-family: Deyihei;
+    src: url("../fonts/DeYiHei_SmileySans.woff2");
+}
+
+/* Set the [page] [height] to 100vh. */
+body {
+    height: 100vh;
+}
+
+/* Set the [font] of the [tip] part. */
+.tip {
+    font-family: OppoSans;
+    font-size: 1.1em;
+}
+
+/* Set the [styles] of the [email link] in the [tip] part. */
+.tip .email {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+/* Set the layout of the [messages] part. */
+.messages {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Set the [layout] of the [message] part in the [messages] part. */
+.messages .message span {
+    text-align: right;
+}
+
+/* Set the [styles] of the [span]s. */
+.messages span {
+    font-family: OppoSans;
+    display: block;
+    font-size: 1.2em;
+}
